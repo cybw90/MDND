@@ -225,6 +225,6 @@ df1 = pd.DataFrame({
     'Count_percent': count_percent
 })
 
-# Save the DataFrame to a new CSV file
+#  Featrue Extracted new CSV 
 df1.to_csv('Extracted_Features.csv', index=False)
 print(df1)
