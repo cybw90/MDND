@@ -14,7 +14,7 @@ import numpy as numm
 from sklearn import datasets, linear_model
 from sklearn.model_selection import cross_val_score
 
-# from genetic_selection import GeneticSelectionCV
+
 data = pd.read_csv(r"Final_Features.csv")
 print(data.dtypes)
 print(data.shape)
