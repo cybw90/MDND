@@ -131,9 +131,9 @@ def MLP_Classifier(X, y):
     # Evaluation metrics
     print("Best Model Parameters:", grid_search.best_params_)
     print("Best cross-validation score: {:.2f}".format(grid_search.best_score_))
-    print("Test Set Accuracy:", accuracy_score(Y_test, Y_pred))
-    print("Test Set Precision:", precision_score(Y_test, Y_pred, average='macro'))
-    print("Test Set Recall:", recall_score(Y_test, Y_pred, average='macro'))
+    print("Accuracy:", accuracy_score(Y_test, Y_pred))
+    print("Precision:", precision_score(Y_test, Y_pred, average='macro'))
+    print("Recall:", recall_score(Y_test, Y_pred, average='macro'))
     print("Classification Report:\n", classification_report(Y_test, Y_pred))
     print("Time taken: {:.2f} seconds".format(end - start))
 
