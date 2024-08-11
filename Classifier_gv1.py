@@ -11,6 +11,9 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
+from sklearn.pipeline import Pipeline
+from sklearn.metrics import accuracy_score, precision_score, recall_score, classification_report
 
 # Load data
 data = pd.read_csv(r"UCIF.csv")
@@ -93,16 +96,6 @@ def NB():
 
 
 #******************************************* 94.5%  with Hyper tuning ***********************************************
-
-from sklearn.preprocessing import StandardScaler
-from sklearn.neural_network import MLPClassifier
-from sklearn.model_selection import train_test_split, StratifiedKFold, GridSearchCV
-from sklearn.pipeline import Pipeline
-from sklearn.metrics import accuracy_score, precision_score, recall_score, classification_report
-from joblib import dump
-from timeit import default_timer as timer
-import numpy as np
-import pandas as pd
 
 def MLP_Classifier(X, y):
     # Split data into training and testing sets
