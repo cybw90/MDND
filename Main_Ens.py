@@ -20,7 +20,7 @@ import gc  # Import garbage collection module
 # Memory management functions
 def limit_memory(max_memory_mb):
     """Limits the maximum memory usage to max_memory_mb ."""
-    max_memory_bytes = max_memory_mb * 1024 * 1024  # Convert MB to bytes
+    max_memory_bytes = max_memory_mb * 1024 * 1024  
     try:
         soft, hard = resource.getrlimit(resource.RLIMIT_AS)
         if max_memory_bytes > hard:
