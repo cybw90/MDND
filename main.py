@@ -104,7 +104,6 @@ def run_classifier_three_times(classifier, X_train, Y_train, X_test, Y_test):
     print("Average Precision:", np.mean(precisions))
     print("Average Recall:", np.mean(recalls))
 
-
 # Random Forest Classifier
 #@track_memory
 def Rf():
