@@ -35,3 +35,8 @@ If you use this work in your research, please cite:
 ## Paper
 
 Read the full paper: [IEEE Xplore](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10778786)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](License) file for details.
